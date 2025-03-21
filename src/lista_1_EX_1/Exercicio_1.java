@@ -16,8 +16,7 @@ public class Exercicio_1 {
 
 		for (int i = 0; i < vetorInteiros.length; i++) {
 			if (localizador == vetorInteiros[i]) {
-				System.out.println(
-						"O número " + localizador + " está localizado na posição " + i + " do vetor!");
+				System.out.println("O número " + localizador + " está localizado na posição " + i + " do vetor!");
 				encontrado = true;
 				break;
 			}
