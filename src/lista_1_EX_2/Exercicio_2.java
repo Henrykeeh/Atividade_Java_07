@@ -9,7 +9,6 @@ public class Exercicio_2 {
 		Scanner lerScanner = new Scanner(System.in);
 		int somaInteiros = 0, tamanhoVetor = 0;
 		float mediaInteiros = 0;
-		int vetorPares[] = new int[10];
 		int vetorInteiros[] = new int[10];
 
 		for (int i = 0; i < vetorInteiros.length; i++) {
@@ -17,9 +16,6 @@ public class Exercicio_2 {
 			vetorInteiros[i] = lerScanner.nextInt();
 			somaInteiros = somaInteiros + vetorInteiros[i];
 			tamanhoVetor = tamanhoVetor +1;
-			if (vetorInteiros[i] % 2 == 0) {
-				vetorPares[i] = vetorInteiros[i];
-			} 
 		}
 		mediaInteiros = (float) somaInteiros / tamanhoVetor;
 		System.out.println("Os números nos índices ímpares do vetor são: ");
@@ -28,9 +24,9 @@ public class Exercicio_2 {
 		
 		System.out.println("Os números pares do vetor são: ");
 		
-		for(int i = 0; i < vetorPares.length; i++) {
-			if (vetorPares[i] != 0) {
-				System.out.print(vetorPares[i] + "  ");
+		for(int i = 0; i < vetorInteiros.length; i++) {
+			if (vetorInteiros[i] % 2 == 0) {
+				System.out.print(vetorInteiros[i] + "  ");
 			}
 			
 		}
