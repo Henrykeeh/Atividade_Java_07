@@ -19,10 +19,12 @@ public class Exercicio_2 {
 		}
 		mediaInteiros = (float) somaInteiros / tamanhoVetor;
 		System.out.println("Os números nos índices ímpares do vetor são: ");
-		System.out.println(vetorInteiros[1]+ "  "+ vetorInteiros[3] + "  "+ vetorInteiros[5] + "  "+ vetorInteiros[7]+ "  " + vetorInteiros[9]);
+		for(int i = 1; i < vetorInteiros.length; i += 2) {
+			System.out.print(vetorInteiros[i] + "  ");
 
-		
-		System.out.println("Os números pares do vetor são: ");
+		}
+				
+		System.out.println("\nOs números pares do vetor são: ");
 		
 		for(int i = 0; i < vetorInteiros.length; i++) {
 			if (vetorInteiros[i] % 2 == 0) {
